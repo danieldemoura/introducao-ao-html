@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao HTML na prática | DIO </title>
+</head>
+<body>
+    <h1>Introdução ao HTML na prática do Bootcamp da DIO</h1>
+    <hr/>
+    <ul>
+        <li><a href="#estrutura-basica">Estrutura básica do HTML</a></li>
+        <li><a href="#tags-basica">Tags básica do HTML</a>
+            <ol>
+                <li><a href="#tag-heading">Tag de cabeçalho</a></li>
+                <li><a href="#tag-p">Tag de parágrafo</a></li>
+                <li><a href="#tag-mark">Tag de marcação de texto</a></li>
+                <li><a href="#tag-small">Tag para deixa um texto pequeno</a></li>
+                <li><a href="#tag-i">Tag para deixar um texto em itálico</a></li>
+                <li><a href="#tag-abbr">Tag de abreviação</a></li>
+                <li><a href="#tag-font">Tag de fonte</a></li>
+                <li><a href="#tag-sup">Tag sup</a></li>
+                <li><a href="#tag-sub">Tag sub</a></li>
+                <li><a href="#tag-blockquote">Tag de citação</a></li>
+                <li><a href="#tag-obsoleta">Tag depreciada do HTML 4</a>
+                    <ol>
+                        <li><a href="#tag-del">Tag de texto exluído</a></li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li><a href="#reference">Referência</a></li>
+    </ul>
+    <h2 id="estrutura-basica">Estrutura básica do HTML</h2>
+    <p>
+        A estrutura básica da construção de uma página HTML consistem das tags: &lt;html&gt; &lt;head&gt; &lt;body&gt;.
+    </p>
+    <pre>
+        &lt;html&gt; 
+            &lt;head&gt; 
+                tags de metadados
+            &lt;/head&gt; 
+            &lt;body&gt;
+                tags de conteúdo
+            &lt;/body&gt;
+        &lt;/html&gt;   
+    </pre>
+    <ul>
+        <li>
+            A tag html delimita todo o conteúdo <i><abbr title="Hypertext Markup Language">HTML</abbr></i>, tudo que estiver dentro dessa tag vai ser um conteúdo HTML.
+        </li>
+        <li>
+            A tag head delimita a parte de informações da página, tudo que estiver dentro dessa tag não irá aparece para o usuário, as tags que estiverem dentro da tag head estaraão relacionadas a parte de metada dados e comportamento da página html. 
+        </li>
+        <li>
+            A tag body é tudo relacionado ao corpo da página HTML, tudo que for colocado entre a abertura e fechamento da tag body é o que defato vai aparecer para o usuário na página.
+        </li>
+    </ul>
+    <hr/>
+    <h2 id="tags-basica">Tags básica do HTML</h2>
+    <h3 id="tag-heading">Tag de cabeçalho</h3>
+    <p>
+        A tag <strong>h1 até h6</strong> são tags de cabeçalho, onde elas possuí uma semântica, a tag h1 é a tag de primeiro nível, mais importante, já a tag h2, é de segundo nível, ou seja, é um subtitulo do título principal que é o h1, e por isso ela é um nível abaixo da tag h1, e assim por diante até chgar na tag h6, que é o último nível das tags de cabeçalho.
+    </p>
+    <h3 id="tag-p">Tag parágrafo</h3>
+    <p>A tag <strong>p</strong> é uma tag de parágrafo, ela representa e delimita um conteúdo de parágrafo</p>
+
+    <h3 id="tag-mark">Tag de marcação de um texto</h3>
+    <p>
+        A tag <strong>mark</strong> é uma tag de marcação de texto, ela serve para marcar ou deixar alguma parte de um texto em destaque, ela á parecida com uma <mark>caneta marcador de texto</mark>.
+    </p>
+
+    <h3 id="tag-small">Tag para deixar um texto pequeno</h3>
+    <p>
+        A tag <strong>small</strong> além de deixar um texto <small>pequeno</small> ela serve para elemento de comentário, referência no final da página.
+    </p>
+
+    <h3 id="tag-i">Tag para deixar um texto em itálico</h3>
+    <p>
+        A tag <strong>i</strong> serva para deixar um texto em <i>itálico</i>, ela também possuí um significado semântico, não só o visual de itálico.
+    </p>
+
+    <h3 id="tag-abbr">Tag de abreviação</h3>
+    <p>
+        A tag <strong>&lt;abbr&gt;</strong> é uma tag de abreviação, ela serve para explicar uma sigla ou acrõnino de uma palavra, quando o usuário posicionar o mouse em cima de uma palavra que contém uma tag abbr, vai aparece um balão explicando aquele termo, por exemplo <abbr title="Hypertext markup language, linguagem de marcação de hipertexto">HTML</abbr>.
+    </p>
+
+    <h3 id="tag-del">Tag de texto exluído</h3>
+    <p>
+        A tag <strong>&lt;del&gt;</strong> serve para representar um texto que foi excluído, visualmente deixa o texto com um traçado no meio, para representar que aquele texto foi excluído, exemplo: <del>Texto Riscado</del>.
+    </p>
+
+    <h3 id="tag-sup">Tag sup</h3>
+    <p>
+        A tag <strong>sup</strong> representra um texto sobrescrito, elevado, com uma posição superior a outro texto exemplo: H<sup>2</sup>
+    </p>
+
+    <h3 id="tag-sub">Tag sub</h3>
+    <p>
+        A tag <strong>sub</strong> é igual a tag sup, só que inverso, ela deixa o texto subscrito, em uma posição inferior, exemplo: C<sub>8</sub>
+    </p>
+
+    <h3 id="tag-blockquote">Tag de citação</h3>
+    <p>
+        A tag <strong>&lt;blockquote&gt;</strong> representa um elemento de uma citação, sempre que tever uma frase que for de outra pessoa que você quiser cita-lá, utilize a tag <i>blockquote</i>, exemplo: 
+        <blockquote>
+            Cada sonho que você deixa pra trás, é um pedaço do seu futuro que deixa de existir.
+        </blockquote>
+    </p>
+
+    <h2 id="tag-obsoleta">Tags depreciadas do HTML5</h2>
+    <h3 id="tag-font">Tag de fonte</h3>
+    <p>
+        A tag <del>&lt;font&gt;</del>, antes utilizana no HTML 4, agora na versão mais recente do HTML 5 ficou obsoleta, e <strong>não é recomenda utiliza-lá</strong>, essa tag era responsável por estilizar texto como sua cor, exemplo: <font color="red">Texto Vermelho</font>. Mas agora como o HTML 5 ficou responsável exclusivamente pela estrutura e semântica da página, qualquer estilização deve ser feita com CSS.
+    </p>
+
+    <hr/>
+    <h2 id="reference">Referência</h2>
+    <ul>
+        <li>
+            tag mark: <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/mark" target="_blank">mais informação na documentação da MDN</a>
+        </li>
+        <li>
+            tag small: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small" target="_blank">mais informação na documentação da MDN</a>
+        </li>
+        <li>
+            tag i: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i" target="_blank">mais informação na documentação da MDN</a>
+        </li>
+        <li>
+            tag abbr: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" target="_blank">mais informação na documentação da MDN</a>
+        </li>
+        <li>
+            tag font:  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font" target="_blank">mais informação na documentação da MDN</a>
+        </li>
+        <li>
+            tag del: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del" target="_blank">mais informação na documentação da MDN</a>
+        </li>
+        <li>
+            tag sup: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup" target="_blank">mais informação na documentação da MDN</a>
+        </li>
+        <li>
+            tag sub: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" target="_blank">mais informação na documentação da MDN</a>
+        </li>
+        <li>
+            tag blockquote: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">mais informação na documentação da MDN</a>
+        </li>
+    </ul>
+</body>
+</html>
